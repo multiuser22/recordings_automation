@@ -1,0 +1,25 @@
+{
+  "client_name": "automation-controller",
+  "hosts": [
+    {
+      "host": "192.168.1.50",
+      "server_name": "WS-ACCOUNTING",
+      "username": "domain\\backupadmin",
+      "password": "REPLACE_WITH_PASSWORD",
+      "domain": "DOMAIN",
+      "shares": ["C$"],
+      "users": [
+        {
+          "username": "jane.doe"
+        },
+        {
+          "username": "john.smith",
+          "search_roots": [
+            "Users/{user}/Documents/Outlook Files",
+            "Users/{user}/AppData/Local/Microsoft/Outlook"
+          ]
+        }
+      ]
+    }
+  ]
+}
